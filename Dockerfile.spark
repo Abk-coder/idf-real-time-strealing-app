@@ -1,0 +1,14 @@
+FROM bitnami/spark:3.3.0
+
+# Install additional dependencies
+USER root
+
+# RUN /opt/bitnami/spark/bin/spark-shell --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0
+
+
+
+# Install Python packages
+# RUN pip install numpy pandas tensorflow kafka-python
+
+# Switch back to the original user
+USER 1001
